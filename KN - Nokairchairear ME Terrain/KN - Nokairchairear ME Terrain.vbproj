@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9958EB5D-6E6F-4349-ACA7-E0EAA28461C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KN___Nokairchairear_ME_Terrain.My.MyApplication</StartupObject>
+    <RootNamespace>KN___Nokairchairear_ME_Terrain</RootNamespace>
+    <AssemblyName>KN - Nokairchairear ME Terrain</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>3.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>KN-ICO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>831A63F912168FA741897A78C8C5E0280D8F00F8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KN - Nokairchairear ME Terrain_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK, Version=3.3.3.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.3.3.3\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=3.3.3.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.GLControl.3.3.3\lib\net20\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Program\About_Box.Designer.vb">
+      <DependentUpon>About_Box.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\About_Box.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Database_CC_Tweak\SQL_Connection_Failed_Try_Again.Designer.vb">
+      <DependentUpon>SQL_Connection_Failed_Try_Again.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Database_CC_Tweak\SQL_Connection_Failed_Try_Again.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Database_CC_Tweak\SQL_Database_Not_Found.Designer.vb">
+      <DependentUpon>SQL_Database_Not_Found.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Database_CC_Tweak\SQL_Database_Not_Found.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Database_CC_Tweak\SQL_Editor.Designer.vb">
+      <DependentUpon>SQL_Editor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Database_CC_Tweak\SQL_Editor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Database_CC_Tweak\SQL_Path_Setting.Designer.vb">
+      <DependentUpon>SQL_Path_Setting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Database_CC_Tweak\SQL_Path_Setting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\License\License_Expert.Designer.vb">
+      <DependentUpon>License_Expert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\License\License_Expert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\License\License_Input.Designer.vb">
+      <DependentUpon>License_Input.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\License\License_Input.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\License\License_Management.Designer.vb">
+      <DependentUpon>License_Management.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\License\License_Management.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\AddNewObject.Designer.vb">
+      <DependentUpon>AddNewObject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\AddNewObject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Ball\Ball.Designer.vb">
+      <DependentUpon>Ball.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Ball\Ball.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Ball\Ball_Editor.Designer.vb">
+      <DependentUpon>Ball_Editor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Ball\Ball_Editor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Cube\Cube.Designer.vb">
+      <DependentUpon>Cube.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Cube\Cube.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Cube\Cube_Editor.Designer.vb">
+      <DependentUpon>Cube_Editor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Cube\Cube_Editor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Cylinder\Cylinder.Designer.vb">
+      <DependentUpon>Cylinder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Cylinder\Cylinder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Cylinder\Cylinder_Editor.Designer.vb">
+      <DependentUpon>Cylinder_Editor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Cylinder\Cylinder_Editor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\EquationAndModelling\3D_Editor.Designer.vb">
+      <DependentUpon>3D_Editor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\EquationAndModelling\3D_Editor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Prism\Prism.Designer.vb">
+      <DependentUpon>Prism.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Prism\Prism.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Prism\Prism_Editor.Designer.vb">
+      <DependentUpon>Prism_Editor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Add_Object_Type\Prism\Prism_Editor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Kernal.Designer.vb">
+      <DependentUpon>Kernal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Kernal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Sumary\Sumary_Volumetric_Print.Designer.vb">
+      <DependentUpon>Sumary_Volumetric_Print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Sumary\Sumary_Volumetric_Print.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\Concrete_Addition_Selection.Designer.vb">
+      <DependentUpon>Concrete_Addition_Selection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\Concrete_Addition_Selection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\Concrete_Formula_Selection.Designer.vb">
+      <DependentUpon>Concrete_Formula_Selection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\Concrete_Formula_Selection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\Concrete_Strange_Selection.Designer.vb">
+      <DependentUpon>Concrete_Strange_Selection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\Concrete_Strange_Selection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\RTC_Time_Control.Designer.vb">
+      <DependentUpon>RTC_Time_Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\RTC_Time_Control.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Setting\Personalization.Designer.vb">
+      <DependentUpon>Personalization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Setting\Personalization.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Setting\System_Kn.Designer.vb">
+      <DependentUpon>System_Kn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Setting\System_Kn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Start_Menu.Designer.vb">
+      <DependentUpon>Start_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Start_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\Customer_Name_Selection.Designer.vb">
+      <DependentUpon>Customer_Name_Selection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\Customer_Name_Selection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\Map_Location_Selection.Designer.vb">
+      <DependentUpon>Map_Location_Selection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue_Dialog\Map_Location_Selection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Splash_Screen.Designer.vb">
+      <DependentUpon>Splash_Screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Splash_Screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Sumary\Sumary_Board.Designer.vb">
+      <DependentUpon>Sumary_Board.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Object Volume Calculator\Sumary\Sumary_Board.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue.Designer.vb">
+      <DependentUpon>Add_Queue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Queue\Add_Queue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Queue\Queue_Kernal.Designer.vb">
+      <DependentUpon>Queue_Kernal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Queue\Queue_Kernal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Splash_Screen_Video.Designer.vb">
+      <DependentUpon>Splash_Screen_Video.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Splash_Screen_Video.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\User_Login\Add_New_User.Designer.vb">
+      <DependentUpon>Add_New_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\User_Login\Add_New_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\User_Login\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\User_Login\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\User_Login\User_Management.Designer.vb">
+      <DependentUpon>User_Management.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\User_Login\User_Management.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Program\About_Box.resx">
+      <DependentUpon>About_Box.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Database_CC_Tweak\SQL_Connection_Failed_Try_Again.resx">
+      <DependentUpon>SQL_Connection_Failed_Try_Again.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Database_CC_Tweak\SQL_Database_Not_Found.resx">
+      <DependentUpon>SQL_Database_Not_Found.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Object Volume Calculator\Add_Object_Type\AddNewObject.resx">
+      <DependentUpon>AddNewObject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Object Volume Calculator\Add_Object_Type\Cube\Cube.resx">
+      <DependentUpon>Cube.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Object Volume Calculator\Add_Object_Type\Cube\Cube_Editor.resx">
+      <DependentUpon>Cube_Editor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Object Volume Calculator\Add_Object_Type\Cylinder\Cylinder.resx">
+      <DependentUpon>Cylinder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Object Volume Calculator\Add_Object_Type\Cylinder\Cylinder_Editor.resx">
+      <DependentUpon>Cylinder_Editor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Object Volume Calculator\Add_Object_Type\EquationAndModelling\3D_Editor.resx">
+      <DependentUpon>3D_Editor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Object Volume Calculator\Add_Object_Type\Prism\Prism.resx">
+      <DependentUpon>Prism.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Object Volume Calculator\Add_Object_Type\Prism\Prism_Editor.resx">
+      <DependentUpon>Prism_Editor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Object Volume Calculator\Kernal.resx">
+      <DependentUpon>Kernal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Object Volume Calculator\Sumary\Sumary_Volumetric_Print.resx">
+      <DependentUpon>Sumary_Volumetric_Print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Queue\Add_Queue_Dialog\Concrete_Addition_Selection.resx">
+      <DependentUpon>Concrete_Addition_Selection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Queue\Add_Queue_Dialog\Concrete_Formula_Selection.resx">
+      <DependentUpon>Concrete_Formula_Selection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Queue\Add_Queue_Dialog\Concrete_Strange_Selection.resx">
+      <DependentUpon>Concrete_Strange_Selection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Queue\Add_Queue_Dialog\RTC_Time_Control.resx">
+      <DependentUpon>RTC_Time_Control.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Setting\Personalization.resx">
+      <DependentUpon>Personalization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Start_Menu.resx">
+      <DependentUpon>Start_Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Queue\Add_Queue_Dialog\Customer_Name_Selection.resx">
+      <DependentUpon>Customer_Name_Selection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Queue\Add_Queue_Dialog\Map_Location_Selection.resx">
+      <DependentUpon>Map_Location_Selection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Splash_Screen.resx">
+      <DependentUpon>Splash_Screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Object Volume Calculator\Sumary\Sumary_Board.resx">
+      <DependentUpon>Sumary_Board.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Queue\Add_Queue.resx">
+      <DependentUpon>Add_Queue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Queue\Queue_Kernal.resx">
+      <DependentUpon>Queue_Kernal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Splash_Screen_Video.resx">
+      <DependentUpon>Splash_Screen_Video.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KN - Nokairchairear ME Terrain_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="KN-ICO.ico" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\KN ICO.png" />
+    <Content Include="Version.txt" />
+    <None Include="Resources\KN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

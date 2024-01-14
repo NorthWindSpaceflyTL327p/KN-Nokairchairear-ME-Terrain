@@ -1,0 +1,32 @@
+﻿Copyright THE KNIGHT NET 2019 © 2024
+THE KNIGHT NET 2019
+[Main Version] . [Big Update] . [Small Update] . [Bug fix]
+
+Version 2.0.0.0 Create 10/01/2024 Release 11/01/2024
+	First move from Nokairchairear to THE KNIGHT NET 2019.
+	New interface.
+
+Version 2.0.0.1 Create 11/01/2024 Release 11/01/2024
+	Fix position of start camera.
+	Add icon to Splash Screen.
+
+Version 2.0.0.2 Create 11/01/2024 Release 11/01/2024
+	Fix bug cube drawing input integer to double.
+
+Version 2.0.1.0 Create 11/01/2024 Release 13/01/2024
+	Add the editor form.
+	Change a font bigger.
+	Add a sumary function.
+
+Version 2.0.2.0 Create 13/01/2024 Release 13/01/2024
+	Change user interface.
+		Change datagridview_object from cellselect to row select.
+		Change Up menu from Text to Icon.
+		Change side menu to down menu.
+		Change big view.
+
+Version 2.1.0.0 Create 13/01/2024 Release XX/XX/2024
+	Add function for concrete plant.
+	Helper to note and sumary.
+	Add a memu function.
+	Add about box.
